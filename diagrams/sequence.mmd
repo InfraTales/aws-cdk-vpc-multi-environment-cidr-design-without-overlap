@@ -1,0 +1,7 @@
+sequenceDiagram
+    User->>APIGateway: Request
+    APIGateway->>Lambda: Request
+    Lambda->>DynamoDB: Request
+    DynamoDB-->>Lambda: Response
+    Lambda-->>APIGateway: Response
+    APIGateway-->>User: Response
