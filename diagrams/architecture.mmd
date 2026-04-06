@@ -1,0 +1,8 @@
+graph TD
+    subgraph AWS["AWS Cloud"]
+        AWS[AWS Services]
+        DB[(Database)]
+    end
+
+    Client --> AWS
+    AWS --> DB
